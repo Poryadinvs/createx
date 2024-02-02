@@ -1,0 +1,1071 @@
+body {
+    overflow-x: hidden;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+.head {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.head .top-head {
+    background-color: #3C3B6E;
+    width: 100%;
+    justify-content: center;
+    color: rgba(255, 255, 255, 0.6);
+    height: 28px;
+    padding-top: 3px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.head .top-head:hover {
+    color: white;
+}
+
+.head .top-head .avaliable {
+    margin-right: 100px;
+}
+
+.head .top-head .infoButtons {
+    margin-right: 80px;
+    cursor: pointer;
+}
+
+.head .top-head .curancy {
+    margin-right: 35px;
+}
+
+.head .bottom-head {
+    justify-content: center;
+    background-color: #17696A;
+    color: white;
+    gap: 15px;
+    width: 100%;
+}
+
+.head .navbar {
+    width: 100%;
+}
+
+.head .navbar .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.head .navbar .divider {
+    border-right: 1px solid;
+    height: 10px;
+    margin-top: 18px;
+}
+
+.head .navbar input {
+    background: url(pics/search-outline.svg) no-repeat center right;
+    background-size: 20px;
+    font-size: 14px;
+    width: 380px;
+    padding: 11px 16px 12px 16px;
+    margin-left: 60px;
+}
+
+.head .navbar:nth-child(7),
+.head .navbar:last-child {
+    font-size: 16px;
+}
+
+.head .navbar .crd .count {
+    padding: 1px 8px 1px 8px;
+    border: 1px solid #03CEA4;
+    background-color: #03CEA4;
+    color: white;
+    border-radius: 4px;
+}
+
+.newCollections {
+    background: url(pics/man.jpeg) no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 70vh;
+    position: relative;
+}
+
+.newCollections .buttonLeft,
+.newCollections .buttonRiht {
+    padding: 5px;
+    width: 48px;
+    height: 48px;
+    font-size: 24px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    position: absolute;
+    top: 300px;
+    transition: all 0.5s;
+}
+
+.newCollections .buttonLeft:hover,
+.newCollections .buttonRiht:hover,
+.tranding .buttonLeft:hover,
+.tranding .buttonRiht:hover,
+.sales .buttonLeft:hover,
+.sales .buttonRiht:hover,
+.complete .buttonLeft:hover,
+.complete .buttonRiht:hover,
+.recentlyViewed .buttonLeft:hover,
+.recentlyViewed .buttonRiht:hover {
+    background-color: #17696A;
+    color: white;
+
+}
+
+.newCollections .buttonLeft {
+    left: 20px;
+}
+
+.newCollections .buttonRiht {
+    right: 20px;
+}
+
+.newCollections .buttons {
+    display: flex;
+    gap: 24px;
+}
+
+.newCollections .buttons .shopSale,
+.newCollections .buttons .ShopTheMenswear,
+.sidePanel .button,
+.toolBar .filterBtn .button,
+.countCardFav .cart,
+.rew .leaveRewSortBy .button {
+    display: flex;
+    padding: 0px 40px;
+    align-items: center;
+    gap: 10px;
+    border-radius: 4px;
+    background-color: #17696A;
+    height: 52px;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.newCollections .buttons .shopSale:hover,
+.newCollections .buttons .ShopTheMenswear:hover,
+.sidePanel .button:hover,
+.toolBar .filterBtn .button:hover,
+.countCardFav .cart:hover {
+    background-color: white;
+    color: #17696A;
+    border: 1px solid #17696A;
+}
+
+
+.newCollections .buttons .shopSale {
+    width: 152px;
+}
+
+.newCollections .buttons .ShopTheMenswear {
+    width: 229px;
+}
+
+.newCollections .CountPages {
+    color: rgba(66, 69, 81, 0.6);
+    display: flex;
+    font-size: 28px;
+    font-weight: bold;
+    gap: 4px;
+    margin-top: 150px;
+
+}
+
+.newCollections .CountPages .page {
+    width: 178px;
+    height: 54px;
+    border-bottom: 2px solid rgba(66, 69, 81, 0.6);
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.newCollections .CountPages .page:hover {
+    color: #424551;
+    border-color: #424551;
+}
+
+.newCollections .container {
+    position: absolute;
+    top: 140px;
+    left: 110px;
+}
+
+.newCollections .newText {
+    margin-bottom: 12px;
+}
+
+.newCollections h1 {
+    margin-bottom: 60px;
+}
+
+.wearTipe .container .card,
+.tranding .container .card,
+.sales .container .card,
+.hoodedCard .container .card,
+.goodsAndFilter .container .card,
+.complete .container .card,
+.recentlyViewed .container .card {
+    border: none;
+    border-radius: none;
+    bottom: 30px;
+}
+
+.NewArrivals .card,
+.tranding .card,
+.sales .card,
+.hoodedCard .card,
+.goodsAndFilter .card,
+.complete .card,
+.recentlyViewed .card {
+    position: relative;
+    border: none;
+    width: 285px;
+    height: 413px;
+}
+
+.NewArrivals .card .stars,
+.tranding .card .stars,
+.sales .card .stars,
+.hoodedCard .card .stars,
+.goodsAndFilter .card .stars,
+.complete .card .stars,
+.recentlyViewed .card .stars {
+    position: absolute;
+    right: 10px;
+    top: 15px;
+}
+
+
+.NewArrivals .card .like,
+.tranding .card .like,
+.hoodedCard .card .like,
+.goodsAndFilter .card .like,
+.complete .card .like,
+.recentlyViewed .card .like {
+    position: absolute;
+    right: 10px;
+    bottom: 100px;
+    border: 1px white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 50%;
+    padding: 10px;
+    transition: all 0.5s;
+}
+
+.NewArrivals .card .like:hover,
+.tranding .card .like:hover,
+.sales .card .like:hover,
+.hoodedCard .card .like:hover,
+.goodsAndFilter .card .like:hover,
+.complete .card .like:hover,
+.recentlyViewed .card .like:hover {
+    background-color: black;
+    color: white;
+}
+
+.NewArrivals .row,
+.tranding .row,
+.sales .row {
+    margin-left: 10px;
+}
+
+.NewArrivals .row::-webkit-scrollbar {
+    width: 0;
+}
+
+
+
+.AddTiles {
+    position: relative;
+}
+
+.AddTiles .col,
+.AddTiles .col-5 {
+    background-size: cover;
+    height: 300px;
+}
+
+.AddTiles .button,
+.tranding .buttonExplore,
+.sales .buttonExplore,
+.hoodedCard .buttonExplore,
+.folowUs .buttonExplore,
+.blog .button,
+.subToUPD .button,
+.topPanel .button,
+.signIn .button,
+.countCardFav .fav {
+    background-color: transparent;
+    border: 1px solid #17696A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #17696A;
+    font-size: 14px;
+    height: 44px;
+    border-radius: 4px;
+    padding: 0px 32px 0 32px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.AddTiles .button:hover,
+.tranding .buttonExplore:hover,
+.sales .buttonExplore:hover,
+.hoodedCard .buttonExplore:hover,
+.folowUs .buttonExplore:hover,
+.blog .button:hover,
+.subToUPD .button:hover,
+.topPanel .button:hover,
+.signIn .button:hover,
+.countCardFav .fav:hover {
+    background-color: #17696A;
+    color: white;
+}
+
+.AddTiles .buttonExplore,
+.tranding .buttonExplore,
+.sales .buttonExplore,
+.hoodedCard .buttonExplore {
+    width: 200px;
+}
+
+.AddTiles .buttonShop {
+    width: 150px;
+}
+
+.AddTiles .buttonOffers {
+    width: 180px;
+    gap: 3px;
+}
+
+.AddTiles .SubButton,
+.subToUPD .SubButton {
+    background-color: #17696A;
+    color: white;
+    padding: 3px 32px 3px 32px;
+    margin-left: -4.5px;
+}
+
+.AddTiles .sub {
+    z-index: 1;
+}
+
+.AddTiles input,
+.subToUPD input {
+    border: 1px solid #D7DADD;
+}
+
+.AddTiles .bacImg {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.AddTiles .bacImg img {
+    height: 250px;
+}
+
+.tranding {
+    background-color: #E5E8ED;
+}
+
+.tranding .card-img img,
+.sales .card-img img,
+.hoodedCard .card-img img,
+.complete .card-img img,
+.recentlyViewed .card-img img {
+    height: 320px;
+}
+
+.tranding .card,
+.sales .card,
+.hoodedCard .card,
+.complete .card,
+.recentlyViewed .card {
+    background-color: transparent;
+}
+
+.tranding .buttonLeft,
+.tranding .buttonRiht,
+.sales .buttonLeft,
+.sales .buttonRiht,
+.buttonLeft .buttonRiht,
+.complete .buttonLeft,
+.complete .buttonRiht,
+.recentlyViewed .buttonLeft,
+.recentlyViewed .buttonRiht {
+    padding: 5px;
+    width: 48px;
+    height: 48px;
+    font-size: 24px;
+    border-radius: 50%;
+    transition: all 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sales .disc,
+.hoodedCard .disc,
+.buttonRiht .disc,
+.toolBar .thing .disc,
+.complete .card .disc,
+.tranding .card .disc,
+.recentlyViewed .card .disc {
+    position: absolute;
+    background-color: #FF4242;
+    color: white;
+    font-size: 13px;
+    padding: 2px;
+    border-radius: 4px;
+    left: 10px;
+    top: 15px;
+}
+
+/* высота карточки 413px */
+
+.sales .container {
+    transition: all 0.5s;
+}
+
+.sales .card {
+    height: 365px;
+    overflow: hidden;
+    transition: all 0.5s;
+}
+
+.sales .card:hover {
+    height: 100%;
+    transform: scale(1.05);
+}
+
+.sales .bottom .sizes .size,
+.hoodedCard .bottom .sizes .size,
+.buttonRiht .bottom .sizes .size {
+    border: solid 1px black;
+    padding: 2px;
+    border-radius: 4px;
+}
+
+.sales .bottom .options,
+.hoodedCard .bottom .options,
+.buttonRiht .bottom .options {
+    position: relative;
+}
+
+.sales .bottom .colors,
+.hoodedCard .bottom .colors,
+.buttonRiht .bottom .colors {
+    position: absolute;
+    right: 0;
+}
+
+.sales .bottom .button,
+.hoodedCard .bottom .button,
+.buttonRiht .bottom .button {
+    color: white;
+    background-color: #17696A;
+    border-radius: 4px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sales .card .like,
+.hoodedCard .card .like .buttonRiht .card .like {
+    position: absolute;
+    right: 10px;
+    bottom: 60px;
+    border: 1px white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 50%;
+    padding: 10px;
+    transition: all 0.5s;
+}
+
+.mobileShop .pic img {
+    height: 200px;
+}
+
+.mobileShop {
+    background-color: #1E212C;
+    color: white;
+    height: 180px;
+    position: relative;
+}
+
+.mobileShop .container {
+    position: absolute;
+    bottom: 5px;
+    left: 70px;
+}
+
+.servisInfo .col {
+    width: 200px;
+}
+
+.servisInfo .col:nth-child(1) {
+    border-right: 1px solid #DADBDD;
+}
+
+.servisInfo .col:nth-child(2) {
+    border-right: 1px solid #DADBDD;
+}
+
+.servisInfo .col:nth-child(3) {
+    border-right: 1px solid #DADBDD;
+}
+
+.servisInfo .subText {
+    font-weight: lighter;
+    font-size: 13px;
+}
+
+.folowUs .pic img {
+    height: 200px;
+}
+
+
+.blog .pic img {
+    width: 550px;
+}
+
+.blog .bottom {
+    padding: 10px;
+}
+
+.blog .card-links .link:nth-child(1),
+.blog .card-links .link:nth-child(2) {
+    border-right: 1px solid grey;
+    padding-right: 10px;
+    height: 20px;
+}
+
+.subToUPD {
+    background-color: #F4F5F6;
+    height: 320px;
+}
+
+.subToUPD .pic img {
+    height: 260px;
+}
+
+.subToUPD .button {
+    font-size: 12px;
+    height: 22px;
+    padding: 10px;
+}
+
+.footer {
+    background-color: #1E212C;
+    color: white;
+}
+
+.footer .link,
+.footer .text,
+.footer .goTop {
+    opacity: 0.6;
+}
+
+.footer .media {
+    background-color: #17696A;
+    border-radius: 4px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer .divider {
+    border: 1px solid #17696A;
+}
+
+.sidePanel .count input,
+.toolBar .sorts .positionOnPage input,
+.sortAndCountPage .sorts .positionOnPage input,
+.toolBar .sortBy .btn,
+.sortAndCountPage .sortBy .btn,
+.countCardFav .count input,
+.sizes .chouse .dropdown .btn,
+.rew .leaveRewSortBy .sortBy .btn {
+    width: 65px;
+    border: 1px solid #D7DADD;
+    border-radius: 4px;
+}
+
+.sidePanel .item {
+    padding: 25px;
+    border-top: 1px solid #E5E8ED;
+}
+
+.offcanvas-top {
+    height: 50vh !important;
+    max-height: none !important;
+}
+
+.topPanel .offcanvas-body .button {
+    width: 150px;
+}
+
+.topPanel .offcanvas-body {
+    margin-left: 110px;
+}
+
+.topPanel .offcanvas-body .backToSchool {
+    margin-left: 80px;
+}
+
+.signIn .button {
+    width: 100%;
+}
+
+.lowNavigation {
+    background-color: #F4F5F6;
+    width: 100%;
+    height: 45px;
+}
+
+.lowNavigation .container .navigation {
+    color: #424551;
+}
+
+.toolBar .filterBtn .button {
+    padding: 10px;
+    height: auto;
+    width: 200px;
+}
+
+.toolBar .sortBy .btn,
+.sortAndCountPage .sortBy .btn {
+    width: 110px;
+}
+
+
+.toolBar .sorts {
+    margin-left: 100px;
+    gap: 25px;
+}
+
+.toolBar .pageCount,
+.sortAndCountPage .pageCount {
+    margin-left: 160px;
+}
+
+.toolBar .sorts .positionOnPage input,
+.sortAndCountPage .positionOnPage input {
+    height: 37.7px;
+}
+
+
+.goodsAndFilter .colors .color {
+    font-size: 12px;
+}
+
+.goodsAndFilter .options {
+    overflow-y: scroll;
+    height: 150px;
+}
+
+.goodsAndFilter .search {
+    width: 100%;
+}
+
+.goodsAndFilter .item {
+    border-bottom: 1px solid #E5E8ED;
+    padding-bottom: 30px;
+}
+
+
+.goodsAndFilter .thing .card {
+    width: 250px;
+    height: 370px;
+}
+
+.goodsAndFilter .thing .card-pic img {
+    width: 250px;
+}
+
+.sortAndCountPage .sorts {
+    gap: 25px;
+}
+
+.product .priceAndStars .price .dics {
+    background-color: #FF4242;
+    color: white;
+    font-size: 16px;
+    padding: 2px;
+    border-radius: 4px;
+}
+
+.countCardFav .fav,
+.countCardFav .cart,
+.countCardFav .count input {
+    height: 44px;
+}
+
+.countCardFav .count input {
+    width: 80px;
+}
+
+.countCardFav .cart {
+    width: 240px;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+.countCardFav .fav {
+    width: 200px;
+}
+
+.sizes .chouse .dropdown .btn {
+    width: 345px;
+}
+
+
+.product .tabPanel .custom-tab.active {
+    background-color: #17696A;
+    color: white;
+}
+
+.product .tabPanel .custom-tab:not(.active) {
+    background-color: transparent;
+    color: #17696A;
+}
+
+.rew .leaveRewSortBy .sortBy .btn {
+    width: 130px;
+}
+
+.rew .reviews .row {
+    border-bottom: 1px solid #E5E8ED;
+    padding-bottom: 20px;
+}
+
+.rew .reviews .row .likeAndDis {
+    margin-left: 500px;
+}
+
+@media screen and (min-width: 0px) and (max-width: 427px) {
+    .top-head {
+        flex-wrap: wrap;
+        height: auto !important;
+    }
+
+    .search {
+        width: 450px;
+        margin-left: -60px !important;
+    }
+
+    .offcanvas-top .search {
+        width: 450px;
+        margin-left: -60px !important;
+    }
+
+    .navbar .divider {
+        display: none;
+    }
+
+    .navbar .crd {
+        margin-top: 10px;
+        margin-left: 0px !important;
+    }
+
+    .offcanvas-top {
+        height: 80vh !important;
+        width: 440px !important;
+        max-height: none !important;
+    }
+
+    .offcanvas-body .row {
+        justify-content: flex-end;
+    }
+
+    .offcanvas-body .row>div {
+        flex-basis: calc(50% - 16px);
+        max-width: calc(50% - 16px);
+    }
+
+    .offcanvas-body .row .backToSchool {
+        flex-basis: auto;
+        max-width: auto;
+    }
+
+    .newCollections .container {
+        margin-left: -80px !important;
+    }
+
+    .newCollections .buttonLeft,
+    .newCollections .buttonRiht {
+        display: none !important;
+    }
+
+    .newCollections .container .newText {
+        justify-content: start !important;
+        font-size: 25px;
+    }
+
+    .newCollections .container .fs-1 {
+        font-size: 35px !important;
+    }
+
+    .newCollections .buttons {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .newCollections .CountPages {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .newCollections .CountPages .page {
+        width: 150px;
+    }
+
+    .NewArrivals .row {
+        flex-wrap: nowrap;
+    }
+
+    .NewArrivals .col-2 {
+        flex-basis: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
+    .AddTiles .row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .AddTiles .col,
+    .AddTiles .col-5 {
+        flex: 1;
+        box-sizing: border-box;
+        margin-bottom: 10px;
+        width: 100%;
+    }
+
+    .AddTiles .limited .time {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .AddTiles .bacImg {
+        display: none;
+    }
+
+    .popular .row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        padding-bottom: 15px;
+    }
+
+    .popular .col-2 {
+        flex: 0 0 calc(50% - 10px);
+        max-width: calc(50% - 10px);
+    }
+
+    .tranding .container .row {
+        margin-left: 45px;
+    }
+
+    .sales .container .row {
+        margin-left: 45px;
+    }
+
+    .mobileShop .container {
+        margin-left: -100px !important;
+        margin-bottom: 40px;
+    }
+
+    .mobileShop .row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .mobileShop .col {
+        width: 100%;
+    }
+
+    .mobileShop .pic {
+        display: none;
+    }
+
+    .folowUs .row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .folowUs .col-3 {
+        width: 100%;
+        text-align: center;
+    }
+
+    .folowUs .col-2 {
+        width: 50%;
+        margin: 1%;
+    }
+
+    .folowUs .button {
+        display: flex;
+        align-items: center;
+    }
+
+    .folowUs .buttonExplore {
+        margin: 0;
+    }
+
+    .blog .row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .blog .col-6 {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .blog .pic img {
+        width: 400px;
+    }
+
+    .subToUPD .col .pic {
+        display: none;
+    }
+
+    .lowNavigation .container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .lowNavigation .navigation {
+        position: static;
+        margin-top: 10px;
+    }
+
+    .lowNavigation .topNav {
+        margin-top: 45px !important;
+    }
+
+    .lowNavigation .bottomNav {
+        margin-top: 50px !important;
+    }
+
+    .toolBar .container,
+    .sortAndCountPage {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .toolBar .sorts,
+    .sortAndCountPage {
+        order: 2;
+        margin-left: 0px !important;
+    }
+
+    .toolBar .filterBtn,
+    .toolBar .pageCount {
+        order: 1;
+        position: static;
+        margin-left: 0px !important;
+    }
+
+    .goodsAndFilter .filters {
+        display: none;
+    }
+
+    .goods .row {
+        margin-left: 50px;
+    }
+
+    .goods .thing {
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .product .tab1 .prodInfo {
+        margin-top: 30px;
+    }
+
+    .product .tab1 .sizes .chouse {
+        width: 250px;
+    }
+
+    .countCardFav .cart,
+    .countCardFav .count input,
+    .countCardFav .fav {
+        width: 401px;
+    }
+
+    .countCardFav {
+        flex-direction: column;
+        align-items: start;
+        text-align: center;
+    }
+
+    .complete .BigPic img {
+        width: 370px;
+    }
+
+    .complete .cards {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 45px !important;
+    }
+
+    .mayBeInterested .row {
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .recentlyViewed .row {
+        flex-direction: column;
+        margin-left: 45px;
+    }
+
+    .tab2 .row {
+        flex-direction: column;
+        align-items: start;
+    }
+
+}
